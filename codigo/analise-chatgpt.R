@@ -1,3 +1,8 @@
+# Instalar pacotes necessários (se não tiverem sido instalados)
+if (!("ggplot2") %in% installed.packages()) install.packages("ggplot2")
+if (!("dplyr") %in% installed.packages()) install.packages("dplyr")
+if (!("readxl") %in% installed.packages()) install.packages("readxl")
+
 # Carregar pacotes
 library(readxl)
 library(dplyr)

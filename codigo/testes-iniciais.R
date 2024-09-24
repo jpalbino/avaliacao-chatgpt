@@ -1,3 +1,12 @@
+# Instalar pacotes necessários (se não tiverem sido instalados)
+if (!("ggplot2") %in% installed.packages()) install.packages("ggplot2")
+if (!("dplyr") %in% installed.packages()) install.packages("dplyr")
+if (!("readxl") %in% installed.packages()) install.packages("readxl")
+if (!("readr") %in% installed.packages()) install.packages("readr")
+if (!("readODS") %in% installed.packages()) install.packages("readODS")
+if (!("tidyverse") %in% installed.packages()) install.packages("tidyverse")
+if (!("corrplot") %in% installed.packages()) install.packages("corrplot")
+
 # Importando dados utilizando a função "Import Dataset" no RStudio
 # Importando dados de um arquivo CSV com a biblioteca "readr"
 library(readr)

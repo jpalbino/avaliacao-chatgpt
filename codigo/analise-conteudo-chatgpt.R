@@ -1,8 +1,9 @@
 # Instalar pacotes necessários (se não tiverem sido instalados)
-install.packages("tm")
-install.packages("wordcloud")
-install.packages("ggplot2")
-install.packages("dplyr")
+if (!("tm") %in% installed.packages()) install.packages("tm")
+if (!("wordcloud") %in% installed.packages()) install.packages("wordcloud")
+if (!("ggplot2") %in% installed.packages()) install.packages("ggplot2")
+if (!("dplyr") %in% installed.packages()) install.packages("dplyr")
+if (!("readxl") %in% installed.packages()) install.packages("readxl")
 
 # Carregar pacotes
 library(readxl)
